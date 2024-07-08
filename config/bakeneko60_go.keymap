@@ -37,7 +37,7 @@
 &kp TAB    &kp Q     &kp W   &kp F     &kp P   &kp B   &kp J   &kp L   &kp U   &kp Y      &kp SEMI  &kp LBKT   &kp RBKT             &kp BSLH
 &kp CAPS   &kp A     &kp R   &kp S     &kp T   &kp G   &kp M   &kp N   &kp E   &kp I      &kp O     &kp APOS                        &kp ENTER
 &kp LSHFT            &kp Z   &kp X     &kp C   &kp D   &kp V   &kp K   &kp H   &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT            &kp RSHFT
-&kp LCTRL  &kp LGUI          &kp LALT                  &trans                             &kp RALT  &kp LGUI   &trans               &kp RCTRL
+&kp LCTRL  &kp LGUI          &kp LALT                  &trans                             &kp RALT  &kp LGUI   &to 2                &kp RCTRL
             >;
         };
 
@@ -55,7 +55,7 @@
 &bt BT_SEL 0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
 &bt BT_SEL 1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &sys_reset
 &bt BT_SEL 2          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&bt BT_SEL 3  &trans          &trans                  &trans                          &trans  &trans  &trans          &trans
+&bt BT_SEL 3  &trans          &trans                  &trans                          &trans  &trans  &to 3           &trans
             >;
         };
 
@@ -73,7 +73,7 @@
 &rgb_ug RGB_EFR  &trans    &kp UP    &trans     &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans    &kp PGUP  &trans     &trans   &trans           &trans
 &rgb_ug RGB_EFF  &kp LEFT  &kp DOWN  &kp RIGHT  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &kp HOME  &kp PGDN  &kp END    &trans                    &bootloader
 &trans                     &trans    &trans     &trans           &trans           &trans           &trans           &trans    &trans    &trans     &trans   &trans           &trans
-&trans           &trans              &trans                                       &rgb_ug RGB_TOG                                       &kp PSCRN  &trans   &trans           &mo 2
+&trans           &trans              &trans                                       &rgb_ug RGB_TOG                                       &kp PSCRN  &trans   &to 0            &mo 2
             >;
         };
     };
